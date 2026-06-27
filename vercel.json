@@ -1,0 +1,18 @@
+{
+  "buildCommand": "pnpm install && pnpm build",
+  "outputDirectory": "dist",
+  "devCommand": "pnpm dev",
+  "installCommand": "pnpm install",
+  "framework": "vite",
+  "env": {
+    "VITE_SHAREPOINT_SITE": "@vite_sharepoint_site",
+    "VITE_SHAREPOINT_LIST": "@vite_sharepoint_list",
+    "VITE_M365_TENANT": "@vite_m365_tenant"
+  },
+  "regions": ["sfo1"],
+  "git": {
+    "deploymentEnabled": {
+      "main": true
+    }
+  }
+}
